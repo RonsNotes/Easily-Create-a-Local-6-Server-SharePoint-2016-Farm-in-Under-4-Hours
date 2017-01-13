@@ -4,7 +4,7 @@
 # PS Version: 5.1
 # Author: Ron Davis
 # 
-# Last Modified: 12/23/2016
+# Last Modified: 1/13/2017
 # 
 # Description: This script joins the domain and renames the virtual machine.         
 #

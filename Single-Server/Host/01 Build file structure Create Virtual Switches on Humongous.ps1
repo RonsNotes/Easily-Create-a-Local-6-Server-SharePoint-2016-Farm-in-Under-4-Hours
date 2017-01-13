@@ -4,7 +4,7 @@
 # PS Version: 5.1
 # Author: Ron Davis
 # 
-# Last Modified: 12/21/2016
+# Last Modified: 1/13/2017
 # 
 # Description: This script enables Enhanced Session Mode, creates virtual switches,
 # and builds the file structure.

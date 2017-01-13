@@ -4,7 +4,7 @@
 # PS Version: 5.1
 # Author: Ron Davis
 # 
-# Last Modified: 12/21/2016
+# Last Modified: 1/13/2017
 # 
 # Description: This script tests for the moving of the correct images to the expected location, creates three virtual machines and enables guest services.
 # Then the script starts the VMs and opens Hyper-V Manager.            

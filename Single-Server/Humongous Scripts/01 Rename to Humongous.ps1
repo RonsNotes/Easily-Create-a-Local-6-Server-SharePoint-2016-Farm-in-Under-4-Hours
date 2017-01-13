@@ -4,7 +4,7 @@
 # PS Version: 5.1
 # Author: Ron Davis
 # 
-# Last Modified: 1/11/2017
+# Last Modified: 1/13/2017
 # 
 # Description: This script  will rename the virtual machine.         
 #

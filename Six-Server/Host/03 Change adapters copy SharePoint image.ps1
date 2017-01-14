@@ -36,7 +36,7 @@ while($x -gt 0) {
 #Create an array of the virtual machine names
 $VMs = @('dc01','SPApp','SPcache','SPSearch','SPweb','SQLSvr')
 
-#Shutting down all virtual machines if they aren't already shut down
+#TASK: SHUT DOWN ALL VIRTUAL MACHINES
 $VMs | Stop-vm 
 
 #TASK: REMOVING EXTERNAL NETWORK ADAPTER

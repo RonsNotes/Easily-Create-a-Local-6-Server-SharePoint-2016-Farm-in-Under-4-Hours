@@ -7,7 +7,7 @@
 # Last Modified: 1/13/2017
 # 
 # Description: This script creates an array of virtual machine names, adds an External Network Adapter,
-# and attatches the SQL ISO file to the SQL VM.           
+# and attaches the SQL ISO file to the SQL VM.           
 #
 # *************************************************************************
 
@@ -27,5 +27,5 @@ $VMs | Stop-vm
 #TASK: ADDING AN EXTERNAL NETWORK ADAPTER
 $VMs | Add-VMNetworkAdapter -SwitchName VMExternalNetwork
 
-#TASK: ATTATCH SQL SERVER 2016 ISO
+#TASK: ATTACH SQL SERVER 2016 ISO
 Set-VMDvdDrive -VMName SQLSvr -Path C:\RonsNotes\ISOs\SQL2016\SQLServer2016-x64-ENU.iso

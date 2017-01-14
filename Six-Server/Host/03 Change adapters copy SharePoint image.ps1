@@ -45,7 +45,7 @@ $Vms | Remove-VMNetworkAdapter
 #TASK: ADDING PRIVATE NETWORK ADAPTER
 $VMs | Add-VMNetworkAdapter -SwitchName VMPrivateNetwork 
 
-#TASK: Starting all virtual machines
+#TASK: STARTING ALL VIRTUAL MACHINES
 $VMs | Start-VM
 
 #Countdown timer to wait for the machines to fully start. Includes a prompt to press any key once the Domain Controller and all other machines are up.

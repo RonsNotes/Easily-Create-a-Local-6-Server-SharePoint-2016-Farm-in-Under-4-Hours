@@ -32,12 +32,12 @@ while($x -gt 0) {
 }
 }
 
-#MONSTER REVIEW/REPPAIR THIS IN PRIOR SCRIPTS
+
 $hOLD = @(Get-Content  "C:\RonsNotes\VMNames\AllVMs\AllVMs.txt" )
 $Hold
 $VMs = $hOLD -split ","
 
-#Shutting down all virtual machines if they aren't already shut down
+#TASK: SHUT DOWN ALL VIRTUAL MACHINES
 $VMs | Stop-VM
 
 #TASK: REMOVING EXTERNAL NETWORK ADAPTER
@@ -46,7 +46,7 @@ $Vms | Remove-VMNetworkAdapter
 #TASK: ADDING PRIVATE NETWORK ADAPTER
 $VMs | Add-VMNetworkAdapter -SwitchName VMPrivateNetwork 
 
-#TASK: Starting all virtual machines
+#TASK: STARTING ALL VIRTUAL MACHINES
 $VMs | Start-VM
 
 #Countdown timer to wait for the machines to fully start.

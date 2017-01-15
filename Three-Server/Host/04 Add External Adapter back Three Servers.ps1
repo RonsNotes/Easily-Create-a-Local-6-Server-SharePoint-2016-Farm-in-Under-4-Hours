@@ -22,11 +22,14 @@ If (!( $isAdmin )) {
 $hOLD = @(Get-Content  "C:\RonsNotes\VMNames\AllVMs\AllVMs.txt" )
 $VMs = $hOLD -split ","
 $VMs
+
+#TASK: SHUT DOWN ALL VIRTUAL MACHINES
 $VMs | Stop-vm 
 
+#TASK: ADDING AN EXTERNAL NETWORK ADAPTER
 $VMs | Add-VMNetworkAdapter -SwitchName VMExternalNetwork 
 
-
+#TASK: ATTACH SQL SERVER 2016 ISO
 Set-VMDvdDrive -VMName SQLSvr -Path C:\RonsNotes\ISOs\SQL2016\SQLServer2016-x64-ENU.iso
 
 Function DropAndCreateVirtualSwitch{

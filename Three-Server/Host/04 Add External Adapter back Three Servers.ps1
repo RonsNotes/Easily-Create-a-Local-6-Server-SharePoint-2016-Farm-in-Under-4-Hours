@@ -30,7 +30,8 @@ $VMs | Stop-vm
 $VMs | Add-VMNetworkAdapter -SwitchName VMExternalNetwork 
 
 #TASK: ATTACH SQL SERVER 2016 ISO
-Set-VMDvdDrive -VMName SQLSvr -Path C:\RonsNotes\ISOs\SQL2016\SQLServer2016-x64-ENU.iso
+$SQLISOName = Get-ChildItem -Path 'C:\ISO\SQL\SQL 2016'
+Set-VMDvdDrive -VMName SQLSvr -Path $SQLISOName.Name
 
 Function DropAndCreateVirtualSwitch{
 #This step prevents conflicts if the switch already exists
